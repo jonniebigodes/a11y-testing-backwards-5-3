@@ -14,7 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "preview-storybook":"serve storybook-static"
+    "preview-storybook": "serve storybook-static"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
@@ -36,6 +36,7 @@
     "@storybook/addons": "^5.3.3",
     "@storybook/react": "^5.3.3",
     "babel-loader": "^8.0.6",
+    "chromatic": "6.0.0",
     "prettier": "^1.19.1",
     "serve": "^11.3.0"
   },
