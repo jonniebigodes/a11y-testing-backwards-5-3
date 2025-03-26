@@ -19,16 +19,23 @@ const TaskWrapper = styled.div`
 const TaskInput = styled.input`
   width: 100%;
   text-overflow: ellipsis;
+  color: #f0f2f5;
   ${props =>
     props.disabled &&
     css`
       color: #aaa;
-    `}
+    `};
 `
 
 const Task = ({ taskInfo }) => (
   <TaskWrapper>
-    <TaskInput value={taskInfo.node.title} readonly placeholder="Input title" />
+    <TaskInput
+      value={taskInfo.node.title}
+      readonly
+      placeholder="Input title"
+      role="list"
+      aria-hidden="true"
+    />
   </TaskWrapper>
 )
 export default Task
